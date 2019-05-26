@@ -38,9 +38,16 @@ class Owner
   end 
   
   def sell_pets 
+<<<<<<< HEAD
     @pets.map do |key, array|
       array.each { |pet| pet.mood = "nervous"}
       array.clear
+=======
+    @pets.each do |key, values|
+      values.each do |value|
+        value.delete 
+      end
+>>>>>>> a55fe5db45fbf35703b775e935e649426723aa79
     end
   end
      
